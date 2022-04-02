@@ -1,0 +1,217 @@
+html {
+    font-size: 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.iframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+}
+
+
+    .initial-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        width: 95%;
+        height: 95%;
+    }
+        .title {
+            font-size: 4rem;
+        }
+        .subtitle {
+            font-size: 2.5rem;
+        }
+        .difficult-button {
+            font-size: 4rem;
+            margin: 1%;
+            padding: 5%;
+            width: 50%;
+            height: 20%;
+            border-radius: 10%;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        }
+            #easy {
+                background-color: lightgreen;
+            }
+            #normal {
+                background-color: #e4eb1c;
+            }
+            #hard {
+                background-color: #d92c21;            
+            }
+
+
+    .get-ready-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .get-ready-display {
+            font-size: 8rem;
+    }
+
+
+    .game-screen {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 95%;        
+    }
+        .game-grid {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/background.jpg');
+            background-size: cover;
+        }
+            .square {
+                width: 6%;
+                height: 5%;
+                border: solid transparent 1px;
+            }
+                .space-invader {
+                    background-image: url('img/space-invader.png');
+                    background-size: cover;
+                }
+                .shooter {
+                    background-image: url('img/shooter.png');
+                    background-size: cover;
+                }
+                .laser {
+                    background-image: url('img/laser.png');
+                    background-size: cover;
+                }
+                .boom {
+                    background-image: url('img/boom.png');
+                    background-size: cover;
+                }
+        .info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 20%;
+            border: solid black 1px;
+        }
+            .controls {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+            }
+                .control-button {
+                    font-size: 8rem;
+                    width: 50%;
+                    height: 100%;
+                }
+            .scores {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+            }
+                .score-label {
+                    font-size: 5rem;
+                    text-align: center;
+                }
+                .score {
+                    font-size: 5rem;
+                    font-weight: 900;
+                    text-align: center;
+                }
+
+
+    .post-game-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 95%;
+    }
+        .message, .final-score {
+            font-size: 3rem;
+            text-align: center;
+        }
+        .play-again-button {
+            font-size: 3rem;
+            margin: 5%;
+            padding: 8%;
+            width: 50%;
+            border-radius: 10%;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+            background-color: darkslategrey;
+            color: white;
+        }
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 7px;
+    }
+
+    .iframe-container {
+        width: 560px;
+        height: 560px;
+    }    
+}
+    
+@media (max-width: 768px) {
+    .iframe-container {
+        width: 420px;
+        height: 420px;
+    }
+
+    .square {
+        width:5.8%;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 6px;
+    }
+
+    .iframe-container {
+        width: 350px;
+        height: 350px;
+    }    
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 4px;
+    }
+
+    .iframe-container {
+        width: 240px;
+        height: 240px;
+    }
+
+    .square {
+        width:5.5%;
+    }    
+}

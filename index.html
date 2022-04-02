@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Space Invaders</title>
+</head>
+<body>
+    <div class="iframe-container">
+
+        <div class="initial-screen">
+            <h1 class="title">SPACE INVADERS!</h1>
+            <h2 class="subtitle">Select your difficult</h2>
+            <button id="easy" class="difficult-button">Easy</button>
+            <button id="normal" class="difficult-button">Normal</button>
+            <button id="hard" class="difficult-button">Hard</button>
+        </div>
+
+        <div class="get-ready-screen">
+            <h1 class="get-ready-display"></h1>
+        </div>
+
+        <div class="game-screen"> 
+            <div class="game-grid"></div>
+            <div class="info">
+                <div class="controls">
+                    <button class="control-button" id="left-control" onclick="moveShooterByClick('left')">&lt;</button>
+                    <button class="control-button" id="shoot-control" onclick="shootLaserByClick()">^</button>
+                    <button class="control-button" id="right-control" onclick="moveShooterByClick('right')">&gt;</button>
+                </div>
+                <div class="scores">
+                    <div class="score-label">Score</div>
+                    <div class="score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-game-screen">            
+            <h1 class="final-score"></h1>
+            <h1 class="message"></h1>
+            <button class="play-again-button">Play Again!</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
