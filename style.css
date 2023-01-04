@@ -23,8 +23,8 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    max-width: 475px;
-    max-height: 475px;
+    max-width: 500px;
+    max-height: 625px;
     background-color: white;
 }
 
@@ -201,24 +201,6 @@ body {
     background-color: darkslategrey;
     color: white;
 }
-
-/* @media (max-width: 1024px) {
-    html {
-        font-size: 7px;
-    }
-}
-
-@media (max-width: 576px) {
-    html {
-        font-size: 6px;
-    }
-}
-
-@media (max-width: 425px) {
-    html {
-        font-size: 4px;
-    }
-} */
 
 @media (max-width: 640px) {
     html {
